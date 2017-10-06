@@ -1,0 +1,44 @@
+{
+  "name": "all-props",
+  "version": "1.0.0",
+  "description": "Utils for all props matching @paths.",
+  "main": "index.js",
+  "scripts": {
+    "flow": "flow",
+    "lint": "eslint ./index.js",
+    "its-all-flowy": "npm run lint; npm run flow; npm run test; depcheck",
+    "COMMENT": "--- TEST RELATED TASKS FOLLOW ---",
+    "coverage": "npm test -- --coverage",
+    "test:list": "npm test -- --listTests",
+    "test": "NODE_ENV=TEST jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZacharyRSmith/all-props.git"
+  },
+  "keywords": [
+    "deep",
+    "get",
+    "object",
+    "property",
+    "properties",
+    "recursive",
+    "recursively",
+    "regex",
+    "regexp"
+  ],
+  "author": "@ZacharyRSmith <ZacharySmith4989@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZacharyRSmith/all-props/issues"
+  },
+  "homepage": "https://github.com/ZacharyRSmith/all-props#readme",
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-google": "^0.9.1",
+    "flow": "^0.2.3",
+    "jest": "^21.2.1"
+  },
+  "dependencies": {}
+}
